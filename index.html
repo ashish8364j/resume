@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+ /* body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}  */
+*{
+	margin:0;
+	padding:0;
+	/* box-sizing: border-box; */
+} 
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+.okay{
+    background: url(back1.jpg);
+  background-repeat: no-repeat;
+  background-size: 200rem 50rem;
+}
+.logo{
+    border-radius: 100px;
+}
+
+
+    </style>
+
+   
+</head>
+<body>
+    <nav class="header flex justify-between h-25" style="background-color: #2b2c31;">
+        <div class="px-36 py-7 font-bold text-2xl">
+            ashish singh
+        </div>
+        <div>
+            <div class="flex list-none justify-end px-36 py-7 gap-10 font-bold text-lg">
+                <a href="#"><li class="text-blue-500 ">home</li></a>
+                <a href="#" onclick="about()"><li class="about" >about</li></a>
+                <a href="#" onclick="contact()"><li class="contact" >contact</li></a>
+                <li>portfolio</li>
+            </div>
+        </div>
+    </nav>
+    <div class="okay">
+        <div class="flex justify-between ">
+            <div class="px-24 py-24">
+                <div class="flex flex-col py-7">
+                    <span class="font-bold text-5xl " ><p class="head text-green-100">okay</p></span>
+                    <span class="text-blue-950 font-bold text-3xl">frontend developer</span>
+                </div>
+                <div class="w-1/2 py-3">
+                    <p class="text-lg text-white font-sans"> 
+                     my name is ashish singh i am a second year student , now i am a front end developer but want to be a full stack developer
+                    </p>
+                </div>
+                <div class="py-3 flex gap-7">
+                    <div><button class="bg-blue-900 w-24 rounded-md text-center py-1 text-white">thank you</button></div>
+                    <!-- <div><button class="bg-blue-900 w-24 rounded-md text-center py-1">let's talk</button></div> -->
+                </div>
+            </div>
+            <div class="px-64 py-28">
+                <div>
+                    <img src="logologo.jpg" alt="" height="200px" width="200px" class="logo">
+                </div>
+            </div>
+        </div>
+     <hr>
+    <div class=" flex justify-around py-5">
+        <div class="h-56 w-52 rounded-xl" style="border: 2px solid rgb(181, 159, 159)" >
+            <p class="text-center text-2xl text-white font-sans">skills :</p>
+            <li class="text-lg text-white font-sans list-none px-3">html</li>
+            <li class="text-lg text-white font-sans list-none px-3">css</li>
+            <li class="text-lg text-white font-sans list-none px-3">java-script</li>
+            <li class="text-lg text-white font-sans list-none px-3">java</li>
+         </div>
+         <div class="h-56 w-52 rounded-xl" style="border: 2px solid rgb(181, 159, 159)" >
+            <p class="text-center text-2xl text-white font-sans">certificates :</p>
+            <a href="https://photos.app.goo.gl/TFYyK87seZBbjyKEA" class="text-lg text-white font-sans list-none px-3 hover:text-red-400">java-script certificate</a>
+            <br>
+            <a href="https://photos.app.goo.gl/qzbdLRhCXBcQPtjt7" class="text-lg text-white font-sans list-none px-3 hover:text-red-400">html certificate</a>
+            <br>
+            <a href="" class="text-lg text-white font-sans list-none px-3 hover:text-red-400">css</a>
+            
+         </div>
+    
+</div>
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="mailto:ashishsingh822003@gmail.com">mail us</a></li>
+                    </ul>
+                </div>
+ 
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/_ashishsingh____"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ashish-singh-8412ba285"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+   <script>
+        
+    function about(){
+        document.write(`
+        <h1>name :</h1>
+        <h4>ASHISH SINGH</h4>
+        <h1>branch :</h1>
+        <h4>ECE</h4>
+        <h1>year :</h1>
+        <h4>second</h4>
+        <h1>intrested in :</h1>
+    <ul>
+        
+        <li>full stack development</li>
+        <li>coding</li>
+        <li>cricket</li>
+   </ul>
+        `)
+    }
+    function contact(){
+        document.write(`
+        <h1>email :</h1>
+        <h4>ashishsingh@gmail.com</h4>
+        <h1>phone no :</h1>
+        <h4>8357980532</h4>
+        <h1>whatsapp no :</h1>
+        <h4>7247377393</h4>
+        `)
+    }
+
+const paraa = document.querySelector('.head')
+var newname= "hi,i am ashish singh"
+var index=1;
+function typewriter(){
+var name = newname.slice(0,index)
+paraa.innerHTML = name
+index>19 ? index=1 : index++
+setTimeout(()=>typewriter(),200)
+console.log(index);
+}
+typewriter()
+
+</script>
+    
+</body> 
+</html>
